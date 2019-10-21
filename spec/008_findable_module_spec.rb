@@ -42,7 +42,7 @@ describe "Concerns::Findable" do
     it "isn't hard-coded" do
       expect(Genre.find_by_name("shoegaze")).to be(genre_two)
     end
-  end
+    end
 
   describe ".find_or_create_by_name" do
     it "is added as a class method to classes that extend the module" do
