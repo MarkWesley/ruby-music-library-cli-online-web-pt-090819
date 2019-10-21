@@ -39,6 +39,7 @@ class MusicLibraryController
         "Type in a valid request please"
       end
     end
+  end
 
   def list_songs
     Song.all.sort {|a,b| a.name <=> b.name}.each_with_index do |song, index|
